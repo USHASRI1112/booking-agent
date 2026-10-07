@@ -11,6 +11,11 @@ def verify_patient(clinic, full_name, dob):
         name_matches = patient["name"].lower() == full_name.strip().lower()
         dob_matches = patient["dob"] == dob.strip()
         if name_matches and dob_matches:
+            if clinic.verified_patient_id and clinic.verified_patient_id != patient_id:
+                return {
+                    "verified": False,
+                    "error": "This conversation is already verified for a different patient. Start a new conversation or contact clinic staff for authorization.",
+                }
             clinic.verified_patient_id = patient_id
             return {"verified": True, "patient_name": patient["name"]}
 

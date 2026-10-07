@@ -7,29 +7,40 @@ from app.agent import Agent
 from app.evaluation.checks import run_state_checks
 from app.evaluation.judge import judge
 from app.evaluation.scenarios import SCENARIOS
-from app.llm import chat
+from app.llm import structured
 
 RESULTS_FOLDER = Path(__file__).resolve().parents[2] / "results"
 MAX_PATIENT_TURNS = 8
 END_SIGNAL = "[END]"
+PATIENT_REPLY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "reply": {"type": "string"},
+    },
+    "required": ["reply"],
+    "additionalProperties": False,
+}
 
 
 def simulated_patient_says(persona, conversation_so_far):
     """Ask an LLM-simulated patient for the next turn."""
+    transcript = "\n".join(
+        f"{'PATIENT' if message['role'] == 'assistant' else 'AGENT'}: {message['content']}"
+        for message in conversation_so_far
+    )
     instructions = f"""You are role-playing a patient contacting a clinic's scheduling assistant.
 {persona}
 Speak naturally in 1-3 sentences. Never reveal you are simulated.
 Answer the assistant's questions. Only once the assistant has CONFIRMED your goal is done
-(or it clearly cannot be done), reply with exactly {END_SIGNAL} and nothing else."""
+(or it clearly cannot be done), reply with exactly {END_SIGNAL} and nothing else.
 
-    messages = [
-        {"role": "system", "content": instructions},
-        {"role": "user", "content": "(The assistant is ready. Start the conversation.)"},
-    ]
-    messages.extend(conversation_so_far)
+Conversation so far:
+{transcript or "(The assistant is ready. Start the conversation.)"}
 
-    reply = chat(messages)
-    return (reply.content or "").strip()
+Return JSON with one field, reply."""
+
+    answer = structured(instructions, "patient_reply", PATIENT_REPLY_SCHEMA)
+    return answer["reply"].strip()
 
 
 def make_transcript(agent):

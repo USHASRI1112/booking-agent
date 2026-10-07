@@ -24,6 +24,15 @@ def test_cannot_touch_other_patients_appointment():
     assert list_my_appointments(c)["appointments"] == []
 
 
+def test_cannot_switch_verified_patient_mid_conversation():
+    c = Clinic()
+    assert verify_patient(c, "James Chen", "1972-11-30")["verified"]
+    assert not verify_patient(c, "Aisha Khan", "1990-07-21")["verified"]
+    assert c.verified_patient_id == "P2"
+    appointments = list_my_appointments(c)["appointments"]
+    assert [a["appointment_id"] for a in appointments] == ["A1"]
+
+
 def test_cannot_double_book_or_invent_slots():
     c = Clinic()
     verify_patient(c, "Aisha Khan", "1990-07-21")
