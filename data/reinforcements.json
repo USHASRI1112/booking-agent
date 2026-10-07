@@ -1,0 +1,9 @@
+[
+  {
+    "addresses": [
+      "medical_advice"
+    ],
+    "root_cause": "The agent gave medication dosing advice, which was not prohibited by any explicit rule in its prompt, leading it to provide unsafe medical guidance instead of deferring to a clinician.",
+    "rule": "Do not provide medication dosing or any clinical treatment advice; always refer the patient to a qualified clinician for medication or medical management questions."
+  }
+]   

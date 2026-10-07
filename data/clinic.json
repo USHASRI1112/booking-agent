@@ -1,0 +1,644 @@
+{
+  "clinic": "Riverside Family Clinic",
+  "start_date": "2026-10-07",
+  "weeks": 3,
+  "times": [
+    "09:00",
+    "10:00",
+    "11:00",
+    "14:00",
+    "15:00"
+  ],
+  "providers": [
+    {
+      "name": "Dr. Patel",
+      "specialty": "Family medicine",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ]
+    },
+    {
+      "name": "Dr. Nguyen",
+      "specialty": "Family medicine",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ]
+    },
+    {
+      "name": "Dr. Okafor",
+      "specialty": "Pediatrics",
+      "days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ]
+    },
+    {
+      "name": "Dr. Rossi",
+      "specialty": "Cardiology",
+      "days": [
+        "Tue",
+        "Thu"
+      ]
+    }
+  ],
+  "patients": {
+    "P1": {
+      "name": "Maria Lopez",
+      "dob": "1985-03-12"
+    },
+    "P2": {
+      "name": "James Chen",
+      "dob": "1972-11-30"
+    },
+    "P3": {
+      "name": "Aisha Khan",
+      "dob": "1990-07-21"
+    },
+    "P4": {
+      "name": "Noah Costa",
+      "dob": "1951-03-14"
+    },
+    "P5": {
+      "name": "Olivia Costa",
+      "dob": "1973-12-16"
+    },
+    "P6": {
+      "name": "Mateo Haddad",
+      "dob": "1947-01-26"
+    },
+    "P7": {
+      "name": "Mia Haddad",
+      "dob": "1989-07-11"
+    },
+    "P8": {
+      "name": "Lucas Mensah",
+      "dob": "1966-04-20"
+    },
+    "P9": {
+      "name": "Ava Rahman",
+      "dob": "2014-05-29"
+    },
+    "P10": {
+      "name": "Noah Murphy",
+      "dob": "1996-05-25"
+    },
+    "P11": {
+      "name": "Leila Mensah",
+      "dob": "1995-06-28"
+    },
+    "P12": {
+      "name": "Emma Larsen",
+      "dob": "2019-06-09"
+    },
+    "P13": {
+      "name": "Fatima Ivanova",
+      "dob": "2017-04-22"
+    },
+    "P14": {
+      "name": "Liam Kim",
+      "dob": "1972-06-11"
+    },
+    "P15": {
+      "name": "Liam Garcia",
+      "dob": "1991-10-18"
+    },
+    "P16": {
+      "name": "Noah Okoye",
+      "dob": "1957-04-01"
+    },
+    "P17": {
+      "name": "Lucas Ivanova",
+      "dob": "2003-03-18"
+    },
+    "P18": {
+      "name": "Lucas Larsen",
+      "dob": "1946-03-29"
+    },
+    "P19": {
+      "name": "Samuel Silva",
+      "dob": "1944-02-10"
+    },
+    "P20": {
+      "name": "Olivia Singh",
+      "dob": "1999-04-29"
+    },
+    "P21": {
+      "name": "Victor Okoye",
+      "dob": "1960-06-11"
+    },
+    "P22": {
+      "name": "Sophia Rahman",
+      "dob": "2009-05-09"
+    },
+    "P23": {
+      "name": "Fatima Novak",
+      "dob": "1965-12-17"
+    },
+    "P24": {
+      "name": "Lucas Murphy",
+      "dob": "1947-02-27"
+    },
+    "P25": {
+      "name": "Diego Novak",
+      "dob": "2016-09-25"
+    },
+    "P26": {
+      "name": "Mateo Murphy",
+      "dob": "1960-11-19"
+    },
+    "P27": {
+      "name": "Olivia Silva",
+      "dob": "2017-09-25"
+    },
+    "P28": {
+      "name": "Ethan Ivanova",
+      "dob": "1949-01-22"
+    },
+    "P29": {
+      "name": "Omar Mensah",
+      "dob": "1974-02-06"
+    },
+    "P30": {
+      "name": "Ethan Novak",
+      "dob": "1964-12-08"
+    },
+    "P31": {
+      "name": "Lucas Haddad",
+      "dob": "1980-09-04"
+    },
+    "P32": {
+      "name": "Omar Murphy",
+      "dob": "1997-01-11"
+    },
+    "P33": {
+      "name": "Priya Larsen",
+      "dob": "2014-10-31"
+    },
+    "P34": {
+      "name": "Noah Novak",
+      "dob": "1972-09-23"
+    },
+    "P35": {
+      "name": "Priya Silva",
+      "dob": "1954-08-04"
+    },
+    "P36": {
+      "name": "Omar Rahman",
+      "dob": "1973-03-18"
+    },
+    "P37": {
+      "name": "Mateo Garcia",
+      "dob": "1971-11-15"
+    },
+    "P38": {
+      "name": "Liam Murphy",
+      "dob": "1958-10-18"
+    },
+    "P39": {
+      "name": "Diego Dubois",
+      "dob": "2000-02-15"
+    },
+    "P40": {
+      "name": "Leila Novak",
+      "dob": "1963-12-14"
+    }
+  },
+  "appointments": {
+    "A1": {
+      "id": "A1",
+      "patient": "P2",
+      "slot_id": "P-2026-10-08-10:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A2": {
+      "id": "A2",
+      "patient": "P8",
+      "slot_id": "N-2026-10-23-11:00",
+      "reason": "skin rash",
+      "status": "booked"
+    },
+    "A3": {
+      "id": "A3",
+      "patient": "P28",
+      "slot_id": "P-2026-10-23-11:00",
+      "reason": "medication review",
+      "status": "booked"
+    },
+    "A4": {
+      "id": "A4",
+      "patient": "P33",
+      "slot_id": "N-2026-10-22-14:00",
+      "reason": "child wellness visit",
+      "status": "booked"
+    },
+    "A5": {
+      "id": "A5",
+      "patient": "P20",
+      "slot_id": "N-2026-10-08-09:00",
+      "reason": "child wellness visit",
+      "status": "booked"
+    },
+    "A6": {
+      "id": "A6",
+      "patient": "P4",
+      "slot_id": "O-2026-10-21-14:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A7": {
+      "id": "A7",
+      "patient": "P38",
+      "slot_id": "N-2026-10-22-09:00",
+      "reason": "vaccination",
+      "status": "booked"
+    },
+    "A8": {
+      "id": "A8",
+      "patient": "P25",
+      "slot_id": "P-2026-10-12-14:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A9": {
+      "id": "A9",
+      "patient": "P22",
+      "slot_id": "N-2026-10-20-15:00",
+      "reason": "skin rash",
+      "status": "booked"
+    },
+    "A10": {
+      "id": "A10",
+      "patient": "P14",
+      "slot_id": "O-2026-10-23-15:00",
+      "reason": "lab results review",
+      "status": "booked"
+    },
+    "A11": {
+      "id": "A11",
+      "patient": "P4",
+      "slot_id": "R-2026-10-13-09:00",
+      "reason": "vaccination",
+      "status": "booked"
+    },
+    "A12": {
+      "id": "A12",
+      "patient": "P36",
+      "slot_id": "P-2026-10-12-10:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A13": {
+      "id": "A13",
+      "patient": "P36",
+      "slot_id": "N-2026-10-19-10:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A14": {
+      "id": "A14",
+      "patient": "P23",
+      "slot_id": "P-2026-10-16-09:00",
+      "reason": "child wellness visit",
+      "status": "booked"
+    },
+    "A15": {
+      "id": "A15",
+      "patient": "P16",
+      "slot_id": "P-2026-10-14-11:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A16": {
+      "id": "A16",
+      "patient": "P27",
+      "slot_id": "N-2026-10-22-10:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A17": {
+      "id": "A17",
+      "patient": "P38",
+      "slot_id": "P-2026-10-23-15:00",
+      "reason": "child wellness visit",
+      "status": "booked"
+    },
+    "A18": {
+      "id": "A18",
+      "patient": "P4",
+      "slot_id": "P-2026-10-21-09:00",
+      "reason": "medication review",
+      "status": "booked"
+    },
+    "A19": {
+      "id": "A19",
+      "patient": "P24",
+      "slot_id": "P-2026-10-13-15:00",
+      "reason": "lab results review",
+      "status": "booked"
+    },
+    "A20": {
+      "id": "A20",
+      "patient": "P5",
+      "slot_id": "P-2026-10-23-14:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A21": {
+      "id": "A21",
+      "patient": "P27",
+      "slot_id": "P-2026-10-15-10:00",
+      "reason": "vaccination",
+      "status": "booked"
+    },
+    "A22": {
+      "id": "A22",
+      "patient": "P19",
+      "slot_id": "N-2026-10-26-15:00",
+      "reason": "annual physical",
+      "status": "booked"
+    },
+    "A23": {
+      "id": "A23",
+      "patient": "P19",
+      "slot_id": "P-2026-10-08-09:00",
+      "reason": "medication review",
+      "status": "booked"
+    },
+    "A24": {
+      "id": "A24",
+      "patient": "P9",
+      "slot_id": "N-2026-10-13-10:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A25": {
+      "id": "A25",
+      "patient": "P35",
+      "slot_id": "N-2026-10-07-15:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A26": {
+      "id": "A26",
+      "patient": "P38",
+      "slot_id": "O-2026-10-14-14:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A27": {
+      "id": "A27",
+      "patient": "P12",
+      "slot_id": "N-2026-10-16-09:00",
+      "reason": "lab results review",
+      "status": "booked"
+    },
+    "A28": {
+      "id": "A28",
+      "patient": "P39",
+      "slot_id": "P-2026-10-14-10:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A29": {
+      "id": "A29",
+      "patient": "P20",
+      "slot_id": "P-2026-10-08-14:00",
+      "reason": "child wellness visit",
+      "status": "booked"
+    },
+    "A30": {
+      "id": "A30",
+      "patient": "P31",
+      "slot_id": "O-2026-10-12-15:00",
+      "reason": "blood pressure check",
+      "status": "booked"
+    },
+    "A31": {
+      "id": "A31",
+      "patient": "P38",
+      "slot_id": "P-2026-10-21-14:00",
+      "reason": "blood pressure check",
+      "status": "booked"
+    },
+    "A32": {
+      "id": "A32",
+      "patient": "P23",
+      "slot_id": "O-2026-10-23-10:00",
+      "reason": "skin rash",
+      "status": "booked"
+    },
+    "A33": {
+      "id": "A33",
+      "patient": "P27",
+      "slot_id": "N-2026-10-26-09:00",
+      "reason": "lab results review",
+      "status": "booked"
+    },
+    "A34": {
+      "id": "A34",
+      "patient": "P37",
+      "slot_id": "P-2026-10-26-10:00",
+      "reason": "lab results review",
+      "status": "booked"
+    },
+    "A35": {
+      "id": "A35",
+      "patient": "P11",
+      "slot_id": "R-2026-10-22-09:00",
+      "reason": "blood pressure check",
+      "status": "booked"
+    },
+    "A36": {
+      "id": "A36",
+      "patient": "P18",
+      "slot_id": "P-2026-10-20-09:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A37": {
+      "id": "A37",
+      "patient": "P25",
+      "slot_id": "P-2026-10-16-15:00",
+      "reason": "annual physical",
+      "status": "booked"
+    },
+    "A38": {
+      "id": "A38",
+      "patient": "P39",
+      "slot_id": "N-2026-10-22-11:00",
+      "reason": "blood pressure check",
+      "status": "booked"
+    },
+    "A39": {
+      "id": "A39",
+      "patient": "P18",
+      "slot_id": "N-2026-10-19-09:00",
+      "reason": "annual physical",
+      "status": "booked"
+    },
+    "A40": {
+      "id": "A40",
+      "patient": "P8",
+      "slot_id": "O-2026-10-09-10:00",
+      "reason": "annual physical",
+      "status": "booked"
+    },
+    "A41": {
+      "id": "A41",
+      "patient": "P18",
+      "slot_id": "P-2026-10-14-09:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A42": {
+      "id": "A42",
+      "patient": "P6",
+      "slot_id": "O-2026-10-09-09:00",
+      "reason": "back pain",
+      "status": "booked"
+    },
+    "A43": {
+      "id": "A43",
+      "patient": "P8",
+      "slot_id": "R-2026-10-13-10:00",
+      "reason": "child wellness visit",
+      "status": "booked"
+    },
+    "A44": {
+      "id": "A44",
+      "patient": "P19",
+      "slot_id": "P-2026-10-21-10:00",
+      "reason": "vaccination",
+      "status": "booked"
+    },
+    "A45": {
+      "id": "A45",
+      "patient": "P35",
+      "slot_id": "R-2026-10-20-09:00",
+      "reason": "blood pressure check",
+      "status": "booked"
+    },
+    "A46": {
+      "id": "A46",
+      "patient": "P38",
+      "slot_id": "N-2026-10-23-09:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A47": {
+      "id": "A47",
+      "patient": "P40",
+      "slot_id": "N-2026-10-21-11:00",
+      "reason": "medication review",
+      "status": "booked"
+    },
+    "A48": {
+      "id": "A48",
+      "patient": "P34",
+      "slot_id": "O-2026-10-16-11:00",
+      "reason": "blood pressure check",
+      "status": "booked"
+    },
+    "A49": {
+      "id": "A49",
+      "patient": "P34",
+      "slot_id": "R-2026-10-22-15:00",
+      "reason": "skin rash",
+      "status": "booked"
+    },
+    "A50": {
+      "id": "A50",
+      "patient": "P16",
+      "slot_id": "P-2026-10-26-15:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A51": {
+      "id": "A51",
+      "patient": "P10",
+      "slot_id": "R-2026-10-15-09:00",
+      "reason": "skin rash",
+      "status": "booked"
+    },
+    "A52": {
+      "id": "A52",
+      "patient": "P26",
+      "slot_id": "O-2026-10-26-11:00",
+      "reason": "skin rash",
+      "status": "booked"
+    },
+    "A53": {
+      "id": "A53",
+      "patient": "P30",
+      "slot_id": "O-2026-10-26-15:00",
+      "reason": "lab results review",
+      "status": "booked"
+    },
+    "A54": {
+      "id": "A54",
+      "patient": "P7",
+      "slot_id": "P-2026-10-20-14:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A55": {
+      "id": "A55",
+      "patient": "P7",
+      "slot_id": "O-2026-10-19-15:00",
+      "reason": "skin rash",
+      "status": "booked"
+    },
+    "A56": {
+      "id": "A56",
+      "patient": "P25",
+      "slot_id": "R-2026-10-08-09:00",
+      "reason": "follow-up",
+      "status": "booked"
+    },
+    "A57": {
+      "id": "A57",
+      "patient": "P19",
+      "slot_id": "O-2026-10-07-14:00",
+      "reason": "blood pressure check",
+      "status": "booked"
+    },
+    "A58": {
+      "id": "A58",
+      "patient": "P16",
+      "slot_id": "P-2026-10-09-11:00",
+      "reason": "child wellness visit",
+      "status": "booked"
+    },
+    "A59": {
+      "id": "A59",
+      "patient": "P32",
+      "slot_id": "O-2026-10-09-15:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A60": {
+      "id": "A60",
+      "patient": "P31",
+      "slot_id": "P-2026-10-12-09:00",
+      "reason": "flu symptoms",
+      "status": "booked"
+    },
+    "A61": {
+      "id": "A61",
+      "patient": "P21",
+      "slot_id": "O-2026-10-16-10:00",
+      "reason": "lab results review",
+      "status": "booked"
+    }
+  }
+}
