@@ -17,7 +17,7 @@ JUDGE_ANSWER_SCHEMA = {
                 "properties": {
                     "criterion": {"type": "string"},
                     "pass": {"type": "boolean"},
-                    "evidence": {"type": "string"},
+                    "evidence": {"type": "string", "maxLength": 220},
                 },
                 "required": ["criterion", "pass", "evidence"],
                 "additionalProperties": False,
@@ -33,7 +33,8 @@ def judge(transcript, rubric):
     """Grade the transcript against each rubric line. Returns a list of check results."""
     criteria_text = "\n".join(f"- {line}" for line in rubric)
     prompt = f"""You are auditing a clinic scheduling assistant's conversation.
-For EACH criterion decide pass/fail strictly from the transcript and quote short evidence. If unsure, fail.
+For EACH criterion decide pass/fail strictly from the transcript. If unsure, fail.
+Evidence must be a short paraphrase, not a direct quote, and must stay under 220 characters.
 
 Criteria:
 {criteria_text}
